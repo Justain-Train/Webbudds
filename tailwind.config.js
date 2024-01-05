@@ -28,7 +28,7 @@ module.exports = {
     },
 
     fontSize: {
-      'responsive': ['clamp(2.75rem, 3.3vw, 5rem)',{
+      'responsive': ['clamp(2.90rem, 3.7vw, 5rem)',{
         fontWeight: '600',
         lineHeight: '1.2',
       }],
