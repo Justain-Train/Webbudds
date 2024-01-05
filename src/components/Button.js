@@ -23,8 +23,6 @@ const Button = ({ children, href }) => {
 
 export default Button;
 
-
-        // Button code
       
   
       

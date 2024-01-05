@@ -26,7 +26,7 @@ const ButtonsComponent = () => {
           key={button.value}
           className={`button ${
             button.value === activeButton ? "active" : ""
-          }  bg-black hover:bg-white hover:bg-opacity[87%] hover:text-black text-white text-xl border-[1px] border-gold border-opacity-[60%] font-semibold py-2 px-4 ml-4 rounded-[15px]`}
+          }  bg-black hover:bg-white hover:bg-opacity[87%] hover:text-black text-white text-base border-[2px] border-navy border-opacity-[100%] font-semibold py-2 px-4 ml-4 rounded-[15px]`}
           href = {button.value}
         >
           {button.label}

@@ -1,15 +1,18 @@
-import framer from 'framer-motion';
 import React from 'react';
 import Link from 'next/link';
-import Button from './Button';
+import Button from "./Button";
 
 
 const Navbar = () => {
   return (
     <nav className="flex flex-wrap pb-3 pt-8 items-center justify-between border-b-2 border-b-navy ">
       <div className="flex items-center">
-        <Link href="/" className="text-white font-bold text-[45px] pl-5">
-        •W•EBBUDDS
+        <Link
+          whileHover=""
+          href="/"
+          className="text-white font-bold text-[45px] pl-5"
+        >
+          •W•EBBUDDS
         </Link>
       </div>
       <div className="flex items-center">
