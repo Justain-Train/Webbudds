@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+
 import Link from 'next/link';
 
 const ButtonsComponent = () => {
-  const [activeButton, setActiveButton] = useState("all");
+
 
   const buttons = [
     { label: "All", value: "/" },
@@ -14,27 +14,21 @@ const ButtonsComponent = () => {
     { label: "UI Components", value: "uiComponents" },
   ];
 
-  const handleButtonClick = (value) => {
-    setActiveButton(value);
-  };
 
   return (
-    <div>
+    <div className ="flex justify-center">
       {buttons.map((button) => (
-       <button>
         <Link
           key={button.value}
-          className={`button ${
-            button.value === activeButton ? "active" : ""
-          }  bg-black hover:bg-white hover:bg-opacity[87%] hover:text-black text-white text-base border-[2px] border-navy border-opacity-[100%] font-semibold py-2 px-4 ml-4 rounded-[15px]`}
+          className={` bg-black hover:border-white hover:border-opacity-[40%] hover:bg-opacity[87%] text-white text-base border-[2px] border-navy border-opacity-[100%] font-semibold py-2 px-4 ml-4 rounded-[15px]`}
           href = {button.value}
         >
-          {button.label}
+          <button>{button.label}</button>
         </Link>
-        </button> 
       ))}
     </div>
   );
 };
 
 export default ButtonsComponent;
+

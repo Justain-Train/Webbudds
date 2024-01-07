@@ -16,14 +16,13 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex items-center">
-        <Link href="/about" className="text-white text-xl font-medium mr-6">
+        <Link href="/about" className="text-white text-xl font-[500] mr-6">
           About
         </Link>
         <Link href="/contact" className="text-white text-xl font-medium mr-6">
           Contact
         </Link>
-        <Button href="/login">Add A Resource</Button>
-        <button className="bg-yellow-400 text-white py-2 px-4 rounded"></button>
+        <Button target="_blank" href="https://docs.google.com/forms/d/1kdjNjMQPWKsy6fbYLEJSec7EcaBj74f00IeaQz1uOKw">Add A Resource</Button>
       </div>
     </nav>
   );
