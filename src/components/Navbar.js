@@ -8,7 +8,6 @@ const Navbar = () => {
     <nav className="flex flex-wrap pb-3 pt-8 items-center justify-between border-b-2 border-b-navy ">
       <div className="flex items-center">
         <Link
-          whileHover=""
           href="/"
           className="text-white font-bold text-[45px] pl-5"
         >

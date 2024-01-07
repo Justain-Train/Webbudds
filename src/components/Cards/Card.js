@@ -12,10 +12,10 @@ const Card = ({resource}) => {
       className="border-[3px] border-navy hover:border-white hover:border-opacity-[40%] ease-in duration-300 border-opacity-[87%] shadow-md rounded-[10px] w-full overflow-hidden group"
     >
       <section className=" bg-white bg-opacity-[4%] flex relative items-center justify-center pb-[50%] pt-[50%] rounded-b-2xl">
-        <div className="absolute w-[70%] rounded-3xl overflow-hidden pb-9">
+        <div className="absolute w-[65%] rounded-xl overflow-hidden pb-6">
           <Image
-            className="w-full object-cover rounded-[8px] shadow-lg"
-            layout='responsive'
+            className="w-full object-cover rounded-[8px] shadow-xl"
+            loading = "lazy"
             src={thumbnail.url}
             alt={title}
             width={200}
@@ -23,7 +23,7 @@ const Card = ({resource}) => {
             quality={100}
           />
         </div>
-        <div className="absolute bottom-3 right-0 left-0 flex group-hover:bg-gradient-to-r group-hover:from-gold ease-in transition-colors duration-300 justify-center items-center py-1 px-[15px] bg-white bg-opacity-[100%] font-semibold text-[14px] xl:text-[15px] text-black">
+        <div className="absolute bottom-0 right-0 left-0 bg flex group-hover:bg-gradient-to-r group-hover:from-gold transition-colors ease-in duration-300 justify-center items-center py-1 px-[15px] bg-white bg-opacity-[87%] font-semibold text-[14px] xl:text-[15px] text-black">
           {tag}
         </div>
       </section>
