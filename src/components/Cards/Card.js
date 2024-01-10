@@ -4,17 +4,18 @@ import Image from 'next/image';
 
 
 
+
 const Card = ({resource}) => {
   const {title, thumbnail , slug, description, tag} = resource;
   return (
     <Link
       href={`${slug}`}
-      className="border-[3px] border-navy hover:border-white hover:border-opacity-[40%] ease-in duration-300 border-opacity-[87%] shadow-md rounded-[10px] w-full overflow-hidden group"
+      className="border-[3px] border-navy hover:border-white hover:border-opacity-[40%] ease-in duration-300 border-opacity-[87%] rounded-[10px] w-full overflow-hidden group"
     >
       <section className=" bg-white bg-opacity-[4%] flex relative items-center justify-center pb-[50%] pt-[50%] rounded-b-2xl">
-        <div className="absolute w-[65%] rounded-xl overflow-hidden pb-6">
+        <div className="absolute w-[65%] rounded-xl overflow-hidden pb-6 group-hover:shadow-light ease-in duration-300">
           <Image
-            className="w-full object-cover rounded-[8px] shadow-xl"
+            className="w-full object-cover rounded-[8px]"
             loading = "lazy"
             src={thumbnail.url}
             alt={title}
@@ -23,7 +24,7 @@ const Card = ({resource}) => {
             quality={100}
           />
         </div>
-        <div className="absolute bottom-0 right-0 left-0 bg flex group-hover:bg-gradient-to-r group-hover:from-gold transition-colors ease-in duration-300 justify-center items-center py-1 px-[15px] bg-white bg-opacity-[87%] font-semibold text-[14px] xl:text-[15px] text-black">
+        <div className="absolute bottom-0 left-0 right-0 flex bg-gold  group-hover:bg-white group-hover:bg-opacity-[70%] transition-colors ease-in duration-300 justify-center items-center  bg-opacity-[87%] font-semibold text-[14px] text-black">
           {tag}
         </div>
       </section>

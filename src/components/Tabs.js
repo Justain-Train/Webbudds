@@ -20,7 +20,7 @@ const ButtonsComponent = () => {
       {buttons.map((button) => (
         <Link
           key={button.value}
-          className={` bg-black hover:border-white hover:border-opacity-[40%] hover:bg-opacity[87%] text-white text-base border-[2px] border-navy border-opacity-[100%] font-semibold py-2 px-4 ml-4 rounded-[15px]`}
+          className={` bg-black hover:border-white hover:border-opacity-[40%] hover:bg-opacity[87%] text-white text-base border-[1px] border-navy border-opacity-[100%] font-semibold py-2 px-4 ml-4 rounded-[15px]`}
           href = {button.value}
         >
           <button>{button.label}</button>

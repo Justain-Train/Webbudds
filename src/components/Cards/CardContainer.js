@@ -1,3 +1,4 @@
+import { Meteors } from '../Ui/Meteors';
 import Card from './Card';
 import {getResources} from '@/utils/contentful';
 
