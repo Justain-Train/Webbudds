@@ -9,4 +9,19 @@
   }
 }
 
+@layer base {
+  input,textarea {
+    border-bottom-width: 1px solid theme('colors.gold');
+    background-color: theme('colors.transparent');
+    font-size: theme('fontSize.tiny');
+    
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+
+
 

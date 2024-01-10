@@ -29,12 +29,13 @@ module.exports = {
 
     fontSize: {
       responsive: [
-        "clamp(2.90rem, 3.7vw, 5rem)",
+        "clamp(3rem, 3.7vw, 5rem)",
         {
           fontWeight: "600",
           lineHeight: "1.2",
         },
       ],
+    'heading': ['clamp(2rem, 5vw, 2.75rem)'], 
       xs: ".75rem",
       sm: ".875rem",
       tiny: ".875rem",
@@ -59,6 +60,7 @@ module.exports = {
       navy: "#2c2e44",
       black: "#121212",
       darkgray: "#959595",
+      gray: "#454545",
       white: "#d8d6d6",
     },
     extend: {

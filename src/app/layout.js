@@ -1,7 +1,8 @@
 
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar/Navbar'
+import { Footer } from '@/components/Footer/Footer'
 
 
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className = "px-[8%] bg-black font-inter">
       <Navbar/>
       {children}
+      <Footer/>
       </body>
     </html>
   )

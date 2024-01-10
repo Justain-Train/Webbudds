@@ -1,7 +1,7 @@
 
 
-import Tab from '../components/Tabs';
-import Typewriter from '@/components/Typewriter';
+import Tab from '../components/Tabs/Tabs';
+import Typewriter from '@/components/Ui/Typewriter';
 import CardContainer from '@/components/Cards/CardContainer';
 import  { Meteors }  from '@/components/Ui/Meteors';
 
@@ -26,7 +26,7 @@ export default function Home() {
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-darkgray from-65% to-black">Web </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-darkgray from-65% to-black">Development </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-darkgray from-65% to-black">Excellence </span> 
-          <Meteors number={6}/>
+          <Meteors number={12}/>
         </h1>
         <p className="text-white text-opacity-[70%] text-base 2xl:text-2xl mt-3">
           WebBudds is a collection of resources for web developers, carefully
