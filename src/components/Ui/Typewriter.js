@@ -17,7 +17,7 @@ const Typewriter = ({ text, delay }) => {
     }
   }, [currentIndex, delay, text]);
 
-  return <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-white to-60%">{currentText}</span>;
+  return <span className=" font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold from-20% to-white">{currentText}</span>;
 };
 
 export default Typewriter;

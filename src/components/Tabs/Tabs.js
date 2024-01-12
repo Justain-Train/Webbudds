@@ -1,7 +1,8 @@
 
+"use client";
 import Link from 'next/link';
-
 const ButtonsComponent = () => {
+
 
 
   const buttons = [
@@ -14,17 +15,18 @@ const ButtonsComponent = () => {
     { label: "UI Components", value: "uiComponents" },
   ];
 
+  
 
   return (
-    <div className ="flex justify-center">
+    <div className ="flex flex-wrap gap-5 justify-center">
       {buttons.map((button) => (
-        <Link
+        <button
           key={button.value}
-          className={` bg-black hover:border-white hover:border-opacity-[40%] hover:text-opacity-100 transition-colors ease-in duration-300 text-white text-opacity-[70%] text-base border-[1px] border-navy border-opacity-[100%] font-[550] py-2 px-4 ml-4 rounded-[15px]`}
-          href = {button.value}
+          className={` bg-black hover:border-white hover:border-opacity-[40%]  transition-colors ease-in duration-300 text-white  text-base border-[1px] border-navy border-opacity-[100%] font-medium py-2 px-4 rounded-[14px]`}
+          onClick={() => setActive(button.label)}
         >
-          <button>{button.label}</button>
-        </Link>
+        {button.label}
+        </button>
       ))}
     </div>
   );

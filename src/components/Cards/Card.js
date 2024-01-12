@@ -24,7 +24,7 @@ const Card = ({resource}) => {
             quality={100}
           />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 flex bg-gold bg-opacity-[87%] group-hover:bg-white transition-colors ease-in duration-300 justify-center items-center font-semibold text-[14px] text-black">
+        <div className="absolute bottom-0 left-0 right-0 flex bg-gradient-to-r from-gold to-black to-86% bg-opacity-[87%] transition-colors ease-in duration-300 justify-center items-center font-semibold text-[14px] text-black">
           {tag}
         </div>
       </section>
