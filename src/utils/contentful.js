@@ -32,6 +32,7 @@ export const getResources = async () => {
           slug
           description
           tag
+          overview
           thumbnail{
             url
           }
