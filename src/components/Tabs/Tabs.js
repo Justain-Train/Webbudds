@@ -26,7 +26,7 @@ const Tabs = ({ category }) => {
       {category.map((categories) => (
         <button
           key={categories}
-          className={`relative hidden md:block text-base transition ${
+          className={`relative hidden text-white md:block text-base transition ${
             active === categories && search === categories
               ? ""
               : "hover:text-white/60"

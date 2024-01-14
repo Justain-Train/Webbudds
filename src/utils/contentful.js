@@ -27,7 +27,7 @@ export const getResources = async () => {
         items {
           sys  {
             id
-          }
+           }
           title
           slug
           description

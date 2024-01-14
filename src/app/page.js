@@ -30,24 +30,25 @@ export default async function Home({searchParams}) {
 
   return (
     <div>
-      <section className="mx-auto text-center max-w-base lg:max-w-[55%] xl:max-w-[50%] 2xl:max-w-[42%]  mt-[3.67rem] mb-[5rem]">
+      
+      <section className="mx-auto text-center max-w-base lg:max-w-[55%] xl:max-w-[50%] 2xl:max-w-[50%]  mt-[4rem] mb-[5rem]">
         <h1 className="text-responsive text-center antialiased text-transparent">
-          <span className=" bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500">
+          <span className=" bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">
             Your{" "}
           </span>
           <span>
             <Typewriter text="Gateway" delay={100} />
           </span>{" "}
-          <span className="bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500">
+          <span className="bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">
             to{" "}
           </span>
-          <span className=" bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500">
+          <span className=" bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">
             Web{" "}
           </span>
-          <span className=" bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500">
+          <span className=" bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">
             Development{" "}
           </span>
-          <span className=" bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500">
+          <span className=" bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">
             Excellence{" "}
           </span>
         </h1>

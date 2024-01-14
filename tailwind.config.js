@@ -33,7 +33,7 @@ module.exports = {
 
     fontSize: {
       responsive: [
-        "clamp(3rem, 3.7vw, 5rem)",
+        "clamp(3rem, 4.3vw, 5rem)",
         {
           fontWeight: "600",
           lineHeight: "1.2",

@@ -14,7 +14,7 @@ export const Footer = () => {
             <ContactForm />
           </section>
           <section className="pt-20 col-span-2">
-            <h2 className="text-white text-opacity-[87%] text-xl">
+            <h2 className="text-white  text-xl">
               My Digital Landscape
             </h2>
             <div className="pt-4">
@@ -26,7 +26,7 @@ export const Footer = () => {
                   icon="mdi:linkedin"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-4xl text-white text-opacity-[80%]"
+                  className="text-4xl text-white"
                 />
                 <div>
                   <span className="relative font-medium text-white text-opacity-[80%] text-base">
@@ -45,7 +45,7 @@ export const Footer = () => {
                   icon="mdi:github"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-4xl text-white text-opacity-[80%]"
+                  className="text-4xl text-white "
                 />
                 <div>
                   <span className="relative font-medium text-white text-opacity-[80%] text-base">
@@ -64,7 +64,7 @@ export const Footer = () => {
                   icon="devicon-plain:behance"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-3xl text-white text-opacity-[80%]"
+                  className="text-3xl text-white "
                 />
                 <div>
                   <span className="relative font-medium text-white text-opacity-[80%] text-base">
@@ -75,7 +75,7 @@ export const Footer = () => {
               </a>
             </div>
             <div>
-              <h2 className="text-white text-opacity-[87%] mt-8 text-xl">
+              <h2 className="text-white  mt-8 text-xl">
                 Contact Email
               </h2>
               <a
@@ -90,7 +90,7 @@ export const Footer = () => {
         </section>
         <section className="flex flex-col gap-5 md:flex-row md:justify-between pt-14 md:pt-20 ">
           <p className="text-white text-opacity-[60%] text-sm">
-            © 2021 Justin Tran
+            © 2024 Justin Tran
           </p>
           <p className="text-white text-opacity-[60%] text-sm">
             Made with ❤️ by <span className="text-white font-bold">Justin Tran つ ◕_◕ つ</span> 

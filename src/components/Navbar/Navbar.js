@@ -3,13 +3,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Button from "../Buttons/Button";
-import { WebbuddLogo } from '../Logo/Logo';
+import { WebbuddLogo } from '../Logo/WebbuddLogo';
 
 
 const Navbar = () => {
   return (
     <nav
-      className="flex flex-wrap pb-3 pt-8 items-center justify-between border-b-2 border-b-navy "
+      className="flex flex-wrap  pt-8 items-center justify-between  "
     >
       <Link  href ="/" className="flex items-center group">
         <div className=" pl-5">
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div>
           <Link
             href="/about"
-            className="text-white relative text-xl font-medium mr-6 hidden lg:flex group"
+            className="text-white relative text-xl transition-colors ease-in-out duration-300 hover:text-opacity-[80%] font-medium mr-6 hidden lg:flex group"
           >
             About
             <span className="absolute -bottom-1 left-0 w-0 border-b-2 group-hover:w-full ease-in-out duration-300" />

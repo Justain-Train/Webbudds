@@ -5,7 +5,7 @@ export const ContactForm = () => {
   return (
     <div className="overflow-hidden" id="contact">
       <div>
-        <h1 className="text-heading text-white text-opacity-[80%] leading-tight font-bold max-w-base xl:max-w-[70%] 2xl:max-w-[65%] pt-6 pb-2">
+        <h1 className="text-heading text-white leading-tight font-bold max-w-base xl:max-w-[70%] 2xl:max-w-[65%] pt-6 pb-2">
           Have a question or want to work together?
         </h1>
         <p className="text-semi max-w-sm md:text-base text-white font-normal text-opacity-[60%] pb-7">
