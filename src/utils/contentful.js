@@ -33,6 +33,7 @@ export const getResources = async () => {
           description
           tag
           overview
+          source
           thumbnail{
             url
           }
