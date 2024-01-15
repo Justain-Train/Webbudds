@@ -21,10 +21,10 @@ export const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/justin-tran-2ba52823b/"
                 className="flex items-center space-x-2 group"
+                target="_blank"
               >
                 <Icon
                   icon="mdi:linkedin"
-                  target="_blank"
                   rel="noreferrer"
                   className="text-4xl text-white"
                 />
@@ -40,10 +40,10 @@ export const Footer = () => {
               <a
                 href="https://github.com/Justain-Train"
                 className="flex items-center space-x-2 group"
+                target="_blank"
               >
                 <Icon
                   icon="mdi:github"
-                  target="_blank"
                   rel="noreferrer"
                   className="text-4xl text-white "
                 />
@@ -59,10 +59,10 @@ export const Footer = () => {
               <a
                 href="https://www.behance.net/justintran32"
                 className="flex items-center space-x-3 group"
+                target="_blank"
               >
                 <Icon
                   icon="devicon-plain:behance"
-                  target="_blank"
                   rel="noreferrer"
                   className="text-3xl text-white "
                 />

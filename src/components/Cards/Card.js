@@ -14,7 +14,7 @@ const Card = ({resource}) => {
     >
 
       <section className ="bg-white bg-opacity-[3%] mx-2 mt-2 mb-1 py-3 rounded-[8px] group-hover:bg-opacity-[6%] ease-in duration-500 ">
-        <div className =" inline-flex font-medium ml-4 text-base text-white text-opacity-[55%] group-hover:text-opacity-100 ease-in-out duration-500">
+        <div className =" inline-flex font-medium ml-4 text-semi text-white text-opacity-[55%] group-hover:text-opacity-100 ease-in-out duration-500">
           {tag}
         </div>
       </section>

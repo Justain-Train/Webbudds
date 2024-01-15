@@ -9,7 +9,7 @@ import { WebbuddLogo } from '../Logo/WebbuddLogo';
 const Navbar = () => {
   return (
     <nav
-      className="flex flex-wrap  pt-8 items-center justify-between  "
+      className="flex flex-wrap  pt-8 items-center justify-between mb-[4rem]"
     >
       <Link  href ="/" className="flex items-center group">
         <div className=" pl-5">
