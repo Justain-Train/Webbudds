@@ -29,7 +29,7 @@ export const Footer = () => {
                   className="text-4xl text-white"
                 />
                 <div>
-                  <span className="relative font-medium text-white text-opacity-[80%] text-base">
+                  <span className="relative font-medium text-white group-hover:text-opacity-100 ease-in-out duration-300 text-opacity-[80%] text-base">
                     Linkedin
                     <span className="absolute -bottom-1 left-0 w-0 border-b-2 group-hover:w-full ease-in-out duration-300" />
                   </span>
@@ -48,7 +48,7 @@ export const Footer = () => {
                   className="text-4xl text-white "
                 />
                 <div>
-                  <span className="relative font-medium text-white text-opacity-[80%] text-base">
+                  <span className="relative font-medium  group-hover:text-opacity-100 ease-in-out duration-300  text-white text-opacity-[80%] text-base">
                     Github
                     <span className="absolute -bottom-1 left-0 w-0 border-b-2 group-hover:w-full ease-in-out duration-300" />
                   </span>
@@ -67,20 +67,20 @@ export const Footer = () => {
                   className="text-3xl text-white "
                 />
                 <div>
-                  <span className="relative font-medium text-white text-opacity-[80%] text-base">
+                  <span className="relative font-medium  group-hover:text-opacity-100 ease-in-out duration-300  text-white text-opacity-[80%] text-base">
                     Behance
                     <span className="absolute -bottom-1 left-0 w-0 border-b-2 group-hover:w-full ease-in-out duration-300" />
                   </span>
                 </div>
               </a>
             </div>
-            <div>
+            <div className="group">
               <h2 className="text-white  mt-8 text-xl">
                 Contact Email
               </h2>
               <a
                 href="mailto:justintran952@gmail.com"
-                className="relative font-medium text-white text-opacity-[80%] text-base group"
+                className="relative font-medium text-white group-hover:text-opacity-100 ease-in-out duration-300  text-opacity-[80%] text-base group"
               >
                 justintran952@gmail.com
                 <span className="absolute -bottom-1 left-0 w-0 border-b-2 group-hover:w-full ease-in-out duration-300" />

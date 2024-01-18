@@ -1,10 +1,9 @@
 import Tab from '../components/Tabs/Tabs';
 import Typewriter from '@/components/Ui/Typewriter';
 import CardContainer from '@/components/Cards/CardContainer';
-import  { Meteors }  from '@/components/Ui/Meteors';
-import { useSearchParams } from 'next/navigation';
 import { getResources } from '@/utils/contentful';
-import { render } from 'react-dom';
+import { TabMobileContainer } from '@/components/Tabs/TabMobileContainer';
+
 
 
 const getCategories = async () => {
@@ -24,9 +23,9 @@ const getCategories = async () => {
 
 
 export default async function Home({searchParams}) {
+
   const categories = await getCategories();
   const { category } = searchParams;
- 
 
   return (
     <div>
@@ -59,6 +58,7 @@ export default async function Home({searchParams}) {
         </p>
       </section>
       <section>
+        <TabMobileContainer category={categories} />
         <Tab category={categories} />
         <CardContainer category = {category}/>
       </section>
