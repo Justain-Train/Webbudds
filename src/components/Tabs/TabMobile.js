@@ -1,19 +1,22 @@
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
-
+import Link from "next/link";
 const variants = {
   open: {
+    y: 0,
     opacity: 1,
   },
   closed: {
+    y: 50,
     opacity: 0,
-   
-  }
+    transition: {
+      duration: 0.01,
+    },
+  },
 };
 
-
-export const TabMobile = ({category}) => {
+export const TabMobile = ({ category, toggle, isOpen }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const search = searchParams.get("category");
@@ -29,36 +32,49 @@ export const TabMobile = ({category}) => {
   }, [router.asPath, search]);
 
   return (
-    <motion.ul className="absolute top-3 w-[300px]">
+    <motion.ul
+      className={`px-4 pb-10 pt-5 w- ${
+        isOpen === true
+          ? "border-white border-opacity-[30%] border-[0.1px]"
+          : " border-[0px]"
+      } `}
+    >
       {category.map((categories) => (
-        <motion.li  key={categories} variants={variants} className="relative">
+        <motion.li key={categories} variants={variants} className="py-1">
           <button
-            className={` text-white text-semi w-full  ${
-              active === categories 
-                ? ""
-                : "hover:text-white/60"
-            } focus-visible:outline-2 font-medium py-2 px-4 rounded-[16px]`}
+            className={` text-semi w-full rounded-md flex  ${
+              active === categories
+                ? "bg-gradient-to-r from-gold to-white mix-blend-difference text-black"
+                : "bg-white bg-opacity-[4%] text-white "
+            } font-medium py-2 pl-4 `}
             style={{
               WebkitTapHighlightColor: "transparent",
             }}
             onClick={() => {
               setActive(categories);
+              toggle();
               categories === "All"
                 ? router.push("/", { scroll: false })
                 : router.push(`/?category=${categories}`, { scroll: false });
             }}
           >
-            {categories === active && (
-            <motion.span
-              layoutId="bubbleMobile"
-              className="absolute  inset-0 inset-x-4 z-10 bg-gradient-to-r from-gold to-white mix-blend-difference"  
-              transition={{ type: "spring", bounce: 0.3, duration: 0.7 }}
-            />
-          )}
-           {categories}
+            {categories}
           </button>
         </motion.li>
       ))}
+      <motion.li
+        variants={variants}
+        className=" mt-4 mb-3 w-full flex flex-col items-center border-t-[0.1px] border-white border-opacity-[50%]"
+      >
+        <div className=" pt-3 text-base">
+          <Link href="/about">About</Link>
+        </div>
+        <div className="pt-1 text-base">
+          <Link href="#contact" onClick={() => toggle()}>
+            Contact
+          </Link>
+        </div>
+      </motion.li>
     </motion.ul>
   );
-}
+};

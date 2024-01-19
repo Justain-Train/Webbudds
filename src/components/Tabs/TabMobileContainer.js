@@ -1,10 +1,9 @@
 "use client";
-import { useRouter, useSearchParams } from "next/navigation";
-import { useState, useEffect} from 'react'
+
 import { motion,useCycle } from "framer-motion";
-import Link from "next/link";
 import { MenuToggle } from "../Ui/MenuToggle";
 import { TabMobile } from "./TabMobile";
+
 
 const variants = {
   closed: {
@@ -12,7 +11,7 @@ const variants = {
     width: "60px",
     height: "60px",
     transition: {
-      duration: 0.2,
+      duration: 0.1,
       type: "spring",
       stiffness: 400,
       damping: 40,
@@ -20,9 +19,15 @@ const variants = {
   },
   open: {
     borderRadius: "3%",
-    width: "300px",
-    height: "500px",
-    backgroundColor: "#12121",
+    width: 300,
+    height: "100%",
+    backgroundColor: "#121212",
+    transition: {
+      duration: 0.1,
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+    },
   },
 };
 
@@ -34,15 +39,16 @@ export const TabMobileContainer = ({ category }) => {
   return (
     <>
       <motion.nav
-        className="fixed z-50 right-11 bottom-9 md:hidden border-white "
+        className="fixed z-50 right-11 bottom-9 md:hidden"
         initial={false}
         animate={isOpen ? "open" : "closed"}
       >
         <motion.div
           className="bg-gold"
           variants={variants}
-          />
-          <TabMobile category = {category}/>
+          > <TabMobile category = {category} toggle={() => toggleOpen()} isOpen = {isOpen}/>
+          </motion.div>
+      
           <MenuToggle toggle={() => toggleOpen()} />
       </motion.nav>
 
