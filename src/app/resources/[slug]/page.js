@@ -1,9 +1,8 @@
-
 import Button from "@/components/Buttons/Button";
 import { getResources } from "@/utils/contentful";
 import Image from "next/image";
 import Link from "next/link";
-import {GoArrowLeft} from 'react-icons/go'
+import { GoArrowLeft } from "react-icons/go";
 
 const resourcePage = async ({ params }) => {
   const resources = params;
@@ -26,7 +25,10 @@ const resourcePage = async ({ params }) => {
 
   return (
     <>
-      <Link href="/" className="ml-8  text-base text-opacity-[60%] hover:text-opacity-100 ease-in-out duration-300 text-white group">
+      <Link
+        href="/"
+        className="ml-8  text-base text-opacity-[60%] hover:text-opacity-100 ease-in-out duration-300 text-white group"
+      >
         <GoArrowLeft className="inline-block mr-1 group-hover:text-2xl ease-in-out duration-300" />
         <span>Back</span>
       </Link>
@@ -59,7 +61,7 @@ const resourcePage = async ({ params }) => {
                 Overview
               </h1>
             </div>
-            <div className="text-white text-semi xl:text-base text-opacity-[75%] mt-2 mb-8">
+            <div className="text-white leading-relaxed text-semi xl:text-base text-opacity-[75%] mt-2 mb-8">
               {overview}
             </div>
             <div className="inline-flex ">

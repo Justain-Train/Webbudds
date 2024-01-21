@@ -74,6 +74,11 @@ export const TabMobile = ({ category, toggle, isOpen }) => {
             Contact
           </Link>
         </div>
+        <div className="pt-1 text-base">
+          <Link href="#" onClick={() => toggle()}>
+            Home
+          </Link>
+        </div>
       </motion.li>
     </motion.ul>
   );

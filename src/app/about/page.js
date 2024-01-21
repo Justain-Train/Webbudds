@@ -2,7 +2,10 @@
 const About = () => {
   return (
     <>
-      <h1>About</h1>
+      <div className="text-center">
+        <h1 className="text-responsive antialiased">About the idea</h1>
+
+      </div>
     </>
   );
 }
