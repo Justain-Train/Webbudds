@@ -1,6 +1,3 @@
-
-
-
 export const ContactForm = () => {
   return (
     <div className="overflow-hidden" id="contact">
@@ -12,9 +9,11 @@ export const ContactForm = () => {
           Fill out the form below and I'll get back to you as soon as possible.
         </p>
       </div>
-      <form>
+      <form action="https://formspree.io/f/meqyeevv" method="POST">
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 sm:pb-4">
           <input
+            required
+            name="name"
             htmlFor="name"
             type="text"
             aria-label="Name"
@@ -25,6 +24,8 @@ export const ContactForm = () => {
           />
           <span>
             <input
+              required
+              name="email"
               htmlFor="email"
               type="email"
               aria-label="Email"
@@ -38,6 +39,8 @@ export const ContactForm = () => {
 
         <div className="">
           <textarea
+            required
+            name="message"
             htmlFor="message"
             aria-label="Message"
             rows={3}
@@ -50,8 +53,9 @@ export const ContactForm = () => {
           <button
             aria-label="Submit"
             htmlFor="submit"
+            disabled={false}
             type="submit"
-            className="btn overflow-hidden relative px-6 py-2 text-base rounded-[10px]  text-black bg-gold"
+            className="btn overflow-hidden relative px-6 py-2 text-base rounded-[20px]  text-black bg-gold"
           >
             Submit
           </button>
