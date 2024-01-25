@@ -114,7 +114,7 @@ export const Footer = () => {
             </div>
             <div>
               <Link
-                className="text-white text-opacity-[87%] text-sm"
+                className="text-white text-opacity-[87%] text-semi"
                 href="#"
               >
                 Back to the Top

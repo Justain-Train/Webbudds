@@ -22,23 +22,23 @@ const fetchContentfulData = async (query) => {
 };
 
 export const getResources = async () => {
-  let query = `{
+  let query = ` {
       resourcesCollection{
         items {
-          sys  {
-            id
-           }
+          sys {
+             id
+            }
           title
           slug
           description
           tag
           overview
           source
-          thumbnail{
+          thumbnail {
             url
           }
         }
-      }
+       }
     }`;
 
   const res = await fetchContentfulData(query);

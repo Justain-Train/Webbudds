@@ -38,7 +38,7 @@ const Card = ({resource}) => {
             <h3 className="text-white text-xl font-semibold">
               {title}
             </h3>
-            <p className="text-white text-opacity-[60%]  text-base">
+            <p className="text-white text-opacity-[60%]  text-semi">
               {description}
             </p>
           </div>

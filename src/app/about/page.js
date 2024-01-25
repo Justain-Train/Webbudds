@@ -1,13 +1,10 @@
-
 const About = () => {
   return (
-    <>
-      <div className="text-center">
-        <h1 className="text-responsive antialiased">About the idea</h1>
-
-      </div>
-    </>
+    <section className ="px-5">
+      
+    </section>
+  
   );
-}
+};
 
 export default About;

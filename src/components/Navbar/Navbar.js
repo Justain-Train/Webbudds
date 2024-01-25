@@ -8,10 +8,10 @@ import { WebbuddLogo } from '../Logo/WebbuddLogo';
 const Navbar = () => {
   return (
     <nav
-      className="flex flex-wrap  pt-8 items-center justify-between mb-[4rem]"
+      className="flex flex-wrap  pt-8 px-5 items-center justify-between mb-[4rem]"
     >
       <Link  href ="/" className="flex items-center group">
-        <div className=" pl-5">
+        <div>
           <WebbuddLogo className="text-5xl rounded-xl"/>
         </div>
         <span className="ml-1 text-white font-semibold text-5xl tracking-tighter hidden lg:block group-hover:animate-bounce-effect">ebBudds</span>
@@ -20,7 +20,7 @@ const Navbar = () => {
         <div>
           <Link
             href="/about"
-            className="text-white relative text-xl transition-colors ease-in-out duration-300 hover:text-white/60 font-medium mr-6 hidden md:flex group"
+            className="text-white relative text-base lg:text-xl transition-colors ease-in-out duration-300 hover:text-white/60 font-medium mr-6 hidden md:flex group"
           >
             About
             <span className="absolute -bottom-1 left-0 w-0 border-b-2 group-hover:w-full ease-in-out duration-300" />
@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
         <Link
           href="#contact"
-          className="text-white relative text-xl font-medium mr-6 hover:text-white/60 ease-in-out duration-300 hidden md:flex group"
+          className="text-white relative text-base lg:text-xl font-medium mr-6 hover:text-white/60 ease-in-out duration-300 hidden md:flex group"
         >
           Contact
           <span className="absolute -bottom-1 left-0 w-0 border-b-2 group-hover:w-full ease-in-out duration-300" />

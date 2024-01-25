@@ -1,4 +1,4 @@
-const { clamp } = require('framer-motion');
+
 const { default: flattenColorPalette, } = require('tailwindcss/lib/util/flattenColorPalette')
 
 const svgToDataUri = require("mini-svg-data-uri");
@@ -27,18 +27,16 @@ module.exports = {
       },
     },
 
-    fontFamily: {
-      inter: ["Inter", "sans-serif"],
-    },
 
     fontSize: {
       responsive: [
         "clamp(3rem, 4.3vw, 5rem)",
         {
-          fontWeight: "600",
           lineHeight: "1.2",
         },
       ],
+
+
     'heading': ['clamp(2rem, 5vw, 2.75rem)'], 
       xs: ".75rem",
       sm: ".875rem",
@@ -113,14 +111,4 @@ module.exports = {
   ],
 };
 
-function addVariablesForColors({ addBase, theme }) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
- 
-  addBase({
-    ":root": newVars,
-  });
-}
 

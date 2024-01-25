@@ -22,14 +22,13 @@ const Tabs = ({ category }) => {
   }, [router.asPath, search]);
 
   return (
-    <div className="flex flex-wrap gap-5 justify-center">
+    <div className="flex flex-wrap gap-2 justify-center">
       {category.map((categories) => (
         <button
           key={categories}
-          className={`relative hidden text-white md:block text-base transition ${
-            active === categories && search === categories
-              ? ""
-              : "hover:text-white/60"
+          className={`relative hidden text-white md:block text-base lg:text-xl transition ${
+            active !== categories && search !== categories
+              && "hover:text-white/60"
           } focus-visible:outline-2 font-medium py-2 px-4 rounded-[16px]`}
           style={{
             WebkitTapHighlightColor: "transparent",
