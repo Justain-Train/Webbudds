@@ -6,12 +6,15 @@ const variants = {
   open: {
     y: 0,
     opacity: 1,
+  transition: {
+    duration: 0.1,
+    },
   },
   closed: {
     y: 50,
     opacity: 0,
     transition: {
-      duration: 0.01,
+      duration: 0.1,
     },
   },
 };
@@ -35,7 +38,7 @@ export const TabMobile = ({ category, toggle, isOpen }) => {
     <motion.ul
       className={`px-4 pb-10 pt-5 w- ${
         isOpen === true
-          ? "border-white border-opacity-[30%] border-[0.1px]"
+          ? "border-white border-opacity-[30%] rounded-[3%] border-[0.1px]"
           : " border-[0px]"
       } `}
     >

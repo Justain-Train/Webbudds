@@ -12,9 +12,6 @@ const variants = {
     height: "60px",
     transition: {
       duration: 0.1,
-      type: "spring",
-      stiffness: 400,
-      damping: 40,
     },
   },
   open: {
@@ -24,9 +21,6 @@ const variants = {
     backgroundColor: "#121212",
     transition: {
       duration: 0.1,
-      type: "spring",
-      stiffness: 400,
-      damping: 40,
     },
   },
 };

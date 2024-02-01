@@ -14,9 +14,7 @@ export const Footer = () => {
             <ContactForm />
           </section>
           <section className="pt-20 col-span-2">
-            <h2 className="text-white  text-xl">
-              My Digital Landscape
-            </h2>
+            <h2 className="text-white  text-xl">My Digital Landscape</h2>
             <div className="pt-4">
               <a
                 href="https://www.linkedin.com/in/justin-tran-2ba52823b/"
@@ -75,9 +73,7 @@ export const Footer = () => {
               </a>
             </div>
             <div className="group">
-              <h2 className="text-white  mt-8 text-xl">
-                Contact Email
-              </h2>
+              <h2 className="text-white  mt-8 text-xl">Contact Email</h2>
               <a
                 href="mailto:justintran952@gmail.com"
                 className="relative font-medium text-white group-hover:text-opacity-100 ease-in-out duration-300  text-opacity-[80%] text-base group"
@@ -93,7 +89,8 @@ export const Footer = () => {
             © 2024 Justin Tran
           </p>
           <p className="text-white text-opacity-[60%] text-sm">
-            Made with ❤️ by <span className="text-white font-bold">Justin Tran つ ◕_◕ つ</span> 
+            Made with ❤️ by{" "}
+            <span className="text-white font-bold">Justin Tran つ ◕_◕ つ</span>
           </p>
           <section className="flex space-x-5 md:space-x-8">
             <div>

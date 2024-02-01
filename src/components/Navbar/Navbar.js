@@ -1,20 +1,19 @@
-"use client"
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 import Button from "../Buttons/Button";
-import { WebbuddLogo } from '../Logo/WebbuddLogo';
-
+import { WebbuddLogo } from "../Logo/WebbuddLogo";
 
 const Navbar = () => {
   return (
-    <nav
-      className="flex flex-wrap  pt-8 px-5 items-center justify-between mb-[4rem]"
-    >
-      <Link  href ="/" className="flex items-center group">
+    <nav className="flex flex-wrap  pt-8 px-5 items-center justify-between mb-[4rem]">
+      <Link href="/" className="flex items-center group">
         <div>
-          <WebbuddLogo className="text-5xl rounded-xl"/>
+          <WebbuddLogo className="text-5xl rounded-xl" />
         </div>
-        <span className="ml-1 text-white font-semibold text-5xl tracking-tighter hidden lg:block group-hover:animate-bounce-effect">ebBudds</span>
+        <span className="ml-1 text-white font-semibold text-5xl tracking-tighter hidden lg:block group-hover:animate-bounce-effect">
+          ebBudds
+        </span>
       </Link>
       <div className="flex items-center">
         <div>
