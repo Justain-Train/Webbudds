@@ -22,7 +22,7 @@ const fetchContentfulData = async (query) => {
 };
 
 export const getResources = async () => {
-  let query = ` {
+  let query = `  {
       resourcesCollection{
         items {
           sys {
