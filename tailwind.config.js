@@ -61,8 +61,6 @@ module.exports = {
       gold: "#e1c194",
       navy: "#2c2e44",
       black: "#121212",
-      darkgray: "#959595",
-      gray: "#454545",
       white: "#d8d6d6",
       neutral: colors.neutral,
     },
