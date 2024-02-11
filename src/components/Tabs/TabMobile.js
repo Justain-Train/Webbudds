@@ -92,7 +92,7 @@ export const TabMobile = ({ category, toggle, isOpen }) => {
             Contact
           </Link>
         </div>
-        <div className="pt-1 text-base text-white ">
+        <div className="pt-1 text-base text-white">
           <Link href="#" onClick={() => toggle()}>
             Home
           </Link>
