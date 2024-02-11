@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Button from "../Buttons/Button";
-import { WebbuddLogo } from "../Logo/WebbuddLogo";
+import { WebbuddLogo } from '@/components/Logo/WebBuddLogo';
 
 const Navbar = () => {
   return (

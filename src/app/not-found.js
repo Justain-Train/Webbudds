@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { WebbuddLogo } from '@/components/Logo/WebbuddLogo';
+import { WebbuddLogo } from '@/components/Logo/WebBuddLogo';
 import {GoArrowLeft} from 'react-icons/go'
 const NotFound = () => {
   return (
