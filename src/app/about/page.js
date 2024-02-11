@@ -1,18 +1,19 @@
+
 const About = () => {
   return (
+  <>
     <section className="flex flex-col items-center ">
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-2 overflow-hidden w-[85%]">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-2 overflow-hidden w-[84%]">
         <div>
           <h1 className ="text-responsive font-bold">
             About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-white from-20% group relative">
               Webbudds.
-              <span className="absolute -bottom-1 left-0 w-0 border-b-2 group-hover:w-full ease-in-out duration-300" />
             </span>
           </h1>
         </div>
         <div className = "text-white text-opacity-[60%] ">
-          <p className=" text-3xl font-medium">
+          <p className=" text-2xl 2xl:text-[1.60rem] font-medium">
             The internet is a vast place, and it's hard to find resources that
             are helpful and reliable for web development. It's even harder to find
             resources that are free and open-source. I've created Webbudds to solve
@@ -28,6 +29,7 @@ const About = () => {
         </div>
       </section>
     </section>
+  </>
   );
 };
 
