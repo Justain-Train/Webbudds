@@ -22,10 +22,10 @@ const fetchContentfulData = async (query) => {
 };
 
 export const getResources = async () => {
-  let query = `  {
-      resourcesCollection{
-        items {
-          sys {
+  let query = `   {
+      resourcesCollection {
+        items  {
+          sys   {
              id
             }
           title
@@ -34,7 +34,7 @@ export const getResources = async () => {
           tag
           overview
           source
-          thumbnail {
+          thumbnail  {
             url
           }
         }
