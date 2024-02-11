@@ -5,7 +5,7 @@ const About = () => {
     <section className="flex flex-col items-center ">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-2 overflow-hidden w-[84%]">
         <div>
-          <h1 className ="text-responsive font-bold">
+          <h1 className ="text-responsive font-bold text-white">
             About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-white from-20% group relative">
               Webbudds.

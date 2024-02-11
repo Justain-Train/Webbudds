@@ -82,17 +82,17 @@ export const TabMobile = ({ category, toggle, isOpen }) => {
       ))}
       <motion.li
         variants={variants}
-        className=" mt-4 mb-3 w-full flex flex-col items-center border-t-[0.1px] border-white border-opacity-[50%]"
+        className="mt-4 mb-3 w-full flex flex-col items-center border-t-[0.1px] border-white border-opacity-[50%]"
       >
-        <div className=" pt-3 text-base">
+        <div className=" pt-3 text-base text-white  ">
           <Link href="/about">About</Link>
         </div>
-        <div className="pt-1 text-base">
+        <div className="pt-1 text-base text-white ">
           <Link href="#contact" onClick={() => toggle()}>
             Contact
           </Link>
         </div>
-        <div className="pt-1 text-base">
+        <div className="pt-1 text-base text-white ">
           <Link href="#" onClick={() => toggle()}>
             Home
           </Link>
