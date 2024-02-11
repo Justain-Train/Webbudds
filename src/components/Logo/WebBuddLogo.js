@@ -1,1 +1,1 @@
-export {default as WebbuddLogo} from './WebbuddLogo.svg'
+export {default as WebbuddLogo} from './WebBuddLogo.svg'
