@@ -52,7 +52,7 @@ export default async function Home({ searchParams }) {
         </p>
       </section>
       <section className="md:hidden pl-5 ">
-        <div className="inline-flex text-white text-semi font-semibold border-b border-gold">
+        <div className="inline-flex text-white text-semi font-semibold border-b-2 border-gold">
           {category === undefined ? "All" : category}
         </div>
       </section>
