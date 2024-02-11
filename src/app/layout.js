@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "WebBudds",
-  description: "Gateway to Web Development",
+  description: "WebBudds is a collection of resources for web developers, carefully curated by web developers to help you learn and grow in your web dev journey.",
 };
 
 export default function RootLayout({ children }) {
