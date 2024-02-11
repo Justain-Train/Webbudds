@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 const variants = {
   open: {
@@ -24,6 +24,7 @@ export const TabMobile = ({ category, toggle, isOpen }) => {
   const searchParams = useSearchParams();
   const search = searchParams.get("category");
   const [active, setActive] = useState("All");
+  const tabRef = useRef(null);
 
   useEffect(() => {
     // Set active to "All" when URL is / or has no category
@@ -32,10 +33,23 @@ export const TabMobile = ({ category, toggle, isOpen }) => {
     } else {
       setActive(search);
     }
-  }, [router.asPath, search]);
+    const handleClickOutside = (event) => {
+      if (tabRef.current && !tabRef.current.contains(event.target) && isOpen === true){
+        toggle();
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [router.asPath, search, toggle]);
+
 
   return (
     <motion.ul
+      ref={tabRef}
       className={`px-4 pb-10 pt-5 w- ${
         isOpen === true
           ? "border-white border-opacity-[30%] rounded-[3%] border-[0.1px]"
@@ -54,6 +68,7 @@ export const TabMobile = ({ category, toggle, isOpen }) => {
               WebkitTapHighlightColor: "transparent",
             }}
             onClick={() => {
+              window.scrollTo(0, 0);
               setActive(categories);
               toggle();
               categories === "All"
