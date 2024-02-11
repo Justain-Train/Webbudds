@@ -1,5 +1,6 @@
 export const ContactForm = () => {
   return (
+  <>
     <div className="overflow-hidden" id="contact">
       <div>
         <h1 className="text-heading text-white leading-tight font-bold max-w-base xl:max-w-[70%] 2xl:max-w-[65%] pt-6 pb-2">
@@ -62,5 +63,7 @@ export const ContactForm = () => {
         </div>
       </form>
     </div>
+  </>
   );
 };
+

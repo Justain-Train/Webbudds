@@ -8,7 +8,7 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <>
-      <footer className=" border-t-navy border-t mt-28 px-12">
+      <footer className=" border-t-navy border-t mt-28 px-3 md:px-12">
         <section className="grid text-2xl font-bold grid-cols-1 lg:grid-cols-6 lg:gap-32">
           <section className="col-span-4">
             <ContactForm />

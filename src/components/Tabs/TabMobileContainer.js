@@ -1,5 +1,4 @@
 "use client";
-
 import { motion,useCycle } from "framer-motion";
 import { MenuToggle } from "../Ui/MenuToggle";
 import { TabMobile } from "./TabMobile";
@@ -37,14 +36,17 @@ export const TabMobileContainer = ({ category }) => {
         initial={false}
         animate={isOpen ? "open" : "closed"}
       >
+
         <motion.div
           className="bg-gold"
           variants={variants}
           > <TabMobile category = {category} toggle={() => toggleOpen()} isOpen = {isOpen}/>
           </motion.div>
+  
       
           <MenuToggle toggle={() => toggleOpen()} />
       </motion.nav>
+   
 
     
     </>

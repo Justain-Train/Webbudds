@@ -27,7 +27,7 @@ const resourcePage = async ({ params }) => {
     <>
       <Link
         href="/"
-        className="ml-8  text-base text-opacity-[60%] hover:text-opacity-100 ease-in-out duration-300 text-white group"
+        className="ml-8  text-base text-opacity-[60%] focus:outline-none hover:text-opacity-100 ease-in-out duration-300 text-white group"
       >
         <GoArrowLeft className="inline-block mr-1 group-hover:text-2xl ease-in-out duration-300" />
         <span>Back</span>
