@@ -2,6 +2,7 @@ import Button from "@/components/Buttons/Button";
 import { getResources } from "@/utils/contentful";
 import Image from "next/image";
 import Link from "next/link";
+import {PageWrapper} from "@/components/Ui/PageWrapper";
 import { GoArrowLeft } from "react-icons/go";
 
 const resourcePage = async ({ params }) => {
@@ -24,7 +25,7 @@ const resourcePage = async ({ params }) => {
   });
 
   return (
-    <>
+    <PageWrapper>
       <Link
         href="/"
         className="ml-8  text-base text-opacity-[60%] focus:outline-none hover:text-opacity-100 ease-in-out duration-300 text-white group"
@@ -76,7 +77,7 @@ const resourcePage = async ({ params }) => {
           </div>
         </section>
       </section>
-    </>
+    </PageWrapper>
   );
 };
 

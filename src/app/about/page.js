@@ -1,7 +1,10 @@
 
+import {PageWrapper} from "@/components/Ui/PageWrapper";
+
+
 const About = () => {
   return (
-  <>
+  <PageWrapper>
     <section className="flex flex-col items-center ">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-2 overflow-hidden w-[84%]">
         <div>
@@ -29,7 +32,7 @@ const About = () => {
         </div>
       </section>
     </section>
-  </>
+  </PageWrapper>
   );
 };
 

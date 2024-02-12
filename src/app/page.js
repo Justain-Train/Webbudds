@@ -2,6 +2,7 @@ import Tab from "../components/Tabs/Tabs";
 import CardContainer from "@/components/Cards/CardContainer";
 import { getResources } from "@/utils/contentful";
 import { TabMobileContainer } from "@/components/Tabs/TabMobileContainer";
+import { PageWrapper } from "@/components/Ui/PageWrapper";
 
 const getCategories = async () => {
   const resources = await getResources();
@@ -21,7 +22,7 @@ export default async function Home({ searchParams }) {
   const { category } = searchParams;
 
   return (
-    <>
+    <PageWrapper>
       <section className="mx-auto text-center max-w-base md:max-w-[65%] lg:max-w-[50%] xl:max-w-[50%] 2xl:max-w-[48%]">
         <h1 className="text-responsive text-center font-bold antialiased text-transparent">
           <span className=" bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600">
@@ -61,6 +62,6 @@ export default async function Home({ searchParams }) {
         <Tab category={categories} />
         <CardContainer category={category} />
       </section>
-    </>
+  </PageWrapper>
   );
 }
