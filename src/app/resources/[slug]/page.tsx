@@ -2,27 +2,19 @@ import Button from "@/components/Buttons/Button";
 import { getResources } from "@/utils/contentful";
 import Image from "next/image";
 import Link from "next/link";
-import {PageWrapper} from "@/components/Ui/PageWrapper";
+import {PageWrapper} from "@/components/ui/PageWrapper";
 import { GoArrowLeft } from "react-icons/go";
+import React from "react";
+
 
 const resourcePage = async ({ params }) => {
+
   const resources = params;
   const res = await getResources();
-  let overview,
-    title,
-    description,
-    thumbnail = "",
-    source = "";
 
-  res.map((res) => {
-    if (res.slug === resources.slug) {
-      overview = res.overview;
-      title = res.title;
-      description = res.description;
-      thumbnail = res.thumbnail;
-      source = res.source;
-    }
-  });
+  const resource = res.find(() => res.slug === resources.slug);
+
+  const { overview, title, description, thumbnail, source } = resource || {};
 
   return (
     <PageWrapper>
@@ -46,7 +38,7 @@ const resourcePage = async ({ params }) => {
               <Image
                 className="w-full object-cover rounded-[8px]"
                 loading="lazy"
-                src={thumbnail.url}
+                src={thumbnail}
                 alt={title}
                 width={200}
                 height={200}
@@ -82,3 +74,5 @@ const resourcePage = async ({ params }) => {
 };
 
 export default resourcePage;
+
+  

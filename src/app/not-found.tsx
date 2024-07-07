@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import { WebbuddLogo } from '@/components/Logo/WebBuddLogo';
+import React from "react"
+import { Logo } from '@/components/Logo/WebBuddsLogo';
 import {GoArrowLeft} from 'react-icons/go'
 const NotFound = () => {
   return (
   <>
     <main className="flex justify-center">
-      <WebbuddLogo className="text-[100px] md:text-[250px] mr-10 rounded-xl"/>
+      <Logo className="text-[100px] md:text-[250px] mr-10 rounded-xl"/>
       <div className="text-base md:text-4xl xl:text-5xl max-w-[45%] text-white font-bold">
         Oopsies! That page cannot be found.
       <div>

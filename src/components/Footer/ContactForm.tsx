@@ -15,7 +15,6 @@ export const ContactForm = () => {
           <input
             required
             name="name"
-            htmlFor="name"
             type="text"
             aria-label="Name"
             placeholder="Name"
@@ -27,7 +26,6 @@ export const ContactForm = () => {
             <input
               required
               name="email"
-              htmlFor="email"
               type="email"
               aria-label="Email"
               placeholder="Email"
@@ -42,7 +40,6 @@ export const ContactForm = () => {
           <textarea
             required
             name="message"
-            htmlFor="message"
             aria-label="Message"
             rows={3}
             placeholder="Your Message"
@@ -53,7 +50,6 @@ export const ContactForm = () => {
         <div className="justify-start mt-9">
           <button
             aria-label="Submit"
-            htmlFor="submit"
             disabled={false}
             type="submit"
             className="btn overflow-hidden relative px-6 py-2 text-base rounded-[20px]  text-black bg-gold"

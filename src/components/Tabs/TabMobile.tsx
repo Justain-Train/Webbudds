@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 const variants = {
@@ -21,6 +21,7 @@ const variants = {
 
 export const TabMobile = ({ category, toggle, isOpen }) => {
   const router = useRouter();
+  const pathName = usePathname();
   const searchParams = useSearchParams();
   const search = searchParams.get("category");
   const [active, setActive] = useState("All");
@@ -28,7 +29,7 @@ export const TabMobile = ({ category, toggle, isOpen }) => {
 
   useEffect(() => {
     // Set active to "All" when URL is / or has no category
-    if (router.asPath === "/" || !search) {
+    if (pathName === "/" || !search) {
       setActive("All");
     } else {
       setActive(search);
@@ -44,7 +45,7 @@ export const TabMobile = ({ category, toggle, isOpen }) => {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [router.asPath, search, toggle]);
+  }, [pathName, search, toggle]);
 
 
   return (

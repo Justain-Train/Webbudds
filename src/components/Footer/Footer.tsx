@@ -21,11 +21,7 @@ export const Footer = () => {
                 className="flex items-center space-x-2 group"
                 target="_blank"
               >
-                <Icon
-                  icon="mdi:linkedin"
-                  rel="noreferrer"
-                  className="text-4xl text-white"
-                />
+                <Icon icon="mdi:linkedin" className="text-4xl text-white" />
                 <div>
                   <span className="relative font-medium text-white group-hover:text-opacity-100 ease-in-out duration-300 text-opacity-[80%] text-base">
                     Linkedin
@@ -40,11 +36,7 @@ export const Footer = () => {
                 className="flex items-center space-x-2 group"
                 target="_blank"
               >
-                <Icon
-                  icon="mdi:github"
-                  rel="noreferrer"
-                  className="text-4xl text-white "
-                />
+                <Icon icon="mdi:github" className="text-4xl text-white " />
                 <div>
                   <span className="relative font-medium  group-hover:text-opacity-100 ease-in-out duration-300  text-white text-opacity-[80%] text-base">
                     Github
@@ -61,7 +53,6 @@ export const Footer = () => {
               >
                 <Icon
                   icon="devicon-plain:behance"
-                  rel="noreferrer"
                   className="text-3xl text-white "
                 />
                 <div>

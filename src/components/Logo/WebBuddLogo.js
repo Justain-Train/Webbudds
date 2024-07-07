@@ -1,1 +1,0 @@
-export {default as WebbuddLogo} from './WebBuddLogo.svg'

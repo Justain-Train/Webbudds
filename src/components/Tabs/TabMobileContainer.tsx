@@ -1,7 +1,7 @@
 "use client";
 
 import { motion,useCycle } from "framer-motion";
-import { MenuToggle } from "../Ui/MenuToggle";
+import { MenuToggle } from "../ui/MenuToggle";
 import { TabMobile } from "./TabMobile";
 
 

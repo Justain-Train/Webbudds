@@ -22,7 +22,6 @@ const Button = ({ children, href, ...props }) => {
         <span>
           <Icon
             icon="tabler:arrow-right"
-            rel="noreferrer"
             className= "text-black text-2xl group-hover:text-3xl ease-in-out duration-300"
           />
         </span>

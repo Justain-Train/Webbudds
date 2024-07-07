@@ -1,24 +1,13 @@
 import Tab from "../components/Tabs/Tabs";
 import CardContainer from "@/components/Cards/CardContainer";
-import { getResources } from "@/utils/contentful";
+import { getCategories } from "@/utils/getCategories";
 import { TabMobileContainer } from "@/components/Tabs/TabMobileContainer";
-import { PageWrapper } from "@/components/Ui/PageWrapper";
+import { PageWrapper } from "@/components/ui/PageWrapper";
 
-const getCategories = async () => {
-  const resources = await getResources();
-  let categories = new Set();
 
-  resources.map((resource) => {
-    resource.tag;
-    categories.add(resource.tag);
-  });
-
-  const cat = ["All", ...categories];
-  return cat;
-};
 
 export default async function Home({ searchParams }) {
-  const categories = await getCategories();
+  const { categories } = await getCategories();
   const { category } = searchParams;
 
   return (
@@ -59,7 +48,7 @@ export default async function Home({ searchParams }) {
       </section>
       <section>
         <TabMobileContainer category={categories} />
-        <Tab category={categories} />
+        <Tab categories ={categories} />
         <CardContainer category={category} />
       </section>
   </PageWrapper>

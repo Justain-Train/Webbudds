@@ -5,7 +5,7 @@ export const client = createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
 });
 
-const fetchContentfulData = async (query) => {
+const fetchContentfulData = async (query: string) => {
   const res = await fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
     {

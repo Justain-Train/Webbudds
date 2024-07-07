@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import Button from "../Buttons/Button";
-import { WebbuddLogo } from '@/components/Logo/WebBuddLogo';
+import {Logo} from "@/components/Logo/WebBuddsLogo";
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-wrap  pt-8 px-5 items-center justify-between mb-[4rem]">
+    <nav className="flex flex-wrap pt-8 px-5 items-center justify-between mb-[4rem]">
       <Link href="/" className="flex items-center group">
         <div>
-          <WebbuddLogo className="text-5xl rounded-xl" />
+          <Logo className="text-5xl rounded-xl" />
         </div>
         <span className="ml-1 text-white font-semibold text-5xl tracking-tighter hidden lg:block group-hover:animate-bounce-effect">
           ebBudds
